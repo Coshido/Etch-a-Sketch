@@ -13,6 +13,13 @@ body{
 div,p,button,input {
     color: #212529;
 }
+button{
+    padding: 10px;
+    border: 1px solid #212529;
+    border-radius: 4px;
+    font-size: 18px;
+    min-width: 180px;
+}
 #main{
     display: flex;
     background-color: #DEE2E6;
@@ -41,6 +48,12 @@ div,p,button,input {
     background-color: pink;
     border: 1px solid #212529;
 }
+#clear:active{
+    transform: scale(0.98);
+    color: #F8F9FA;
+    background-color: #343A40;
+}
+
 /* dev css */
 .pink{
     background-color: pink;
