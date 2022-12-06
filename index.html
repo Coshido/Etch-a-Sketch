@@ -11,10 +11,10 @@
     <div id="main">
         <div id="settings">
             <div>black</div>
-            <div>color picker</div>
-            <div>rainbow mode</div>
-            <div>eraser</div>
-            <div>clear</div>
+            <button id="color" onclick="modeSelector('color')">Color Mode</button>
+            <button id="rainbow" onclick="modeSelector('rainbow')">Rainbow Mode</button>
+            <button id="eraser" onclick="modeSelector('eraser')">Eraser</button>
+            <button id="clear" onclick="createGrid()">Clear Grid</button>
             <div id="slide">
                 <p>some text</p>
                 <input type="range" min="2" max="16" id="slider" oninput="createGrid()">
