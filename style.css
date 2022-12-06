@@ -1,3 +1,8 @@
+:root{
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
 body{
     display:flex;
     justify-content: center;
@@ -15,7 +20,13 @@ body{
 #sketch{
     height: 500px;
     width: 500px;
-    
+    display: grid;
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+}
+.grid-item{
+    background-color: pink;
+    border: 1px solid black;
 }
 /* dev css */
 .pink{
