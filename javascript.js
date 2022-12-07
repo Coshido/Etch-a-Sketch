@@ -3,9 +3,11 @@ let mode = "black";
 let mouseDown = false;
 document.body.onmousedown = function(){
     mouseDown = true;
+    console.log("mouseDown TRUE");
 }
 document.body.onmouseup = function() {
     mouseDown = false;
+    console.log("mouseDown FALSE");
 }
 
 function clearGrid(){
