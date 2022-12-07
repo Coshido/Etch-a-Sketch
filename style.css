@@ -62,7 +62,12 @@ min-width: 180px;
     text-align: center;
     margin-top: 0;
 }
-
+#color-picker{
+    min-width: 180px;
+    min-height: 43px;
+    border: 1px solid #212529;
+    border-radius: 4px;
+}
 /* dev css */
 .pink{
     background-color: pink;

@@ -15,6 +15,9 @@ function changeColor(e){
     if(mouseDown){
         switch (mode){
             case 'color':
+                let colorPicked = document.querySelector('#color-picker').value;
+                e.target.style.backgroundColor = `${colorPicked}`
+                console.log(colorPicked)
                 break;
             case 'rainbow':
                 let color1 = Math.floor(Math.random() * 256);
