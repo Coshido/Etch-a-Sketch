@@ -29,7 +29,7 @@ function changeColor(e){
                 e.target.style.backgroundColor = '#F8F9FA'
                 break;
             default:
-                break;
+                break; 
         }
     }
 }
