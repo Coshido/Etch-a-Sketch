@@ -13,7 +13,20 @@ function clearGrid(){
 }
 function changeColor(e){
     if(mouseDown){
-        e.target.style.backgroundColor = "black";
+        switch (mode){
+            case 'color':
+                break;
+            case 'rainbow':
+                let color1 = Math.floor(Math.random() * 256);
+                let color2 = Math.floor(Math.random() * 256);
+                let color3 = Math.floor(Math.random() * 256);
+                e.target.style.backgroundColor = `rgb(${color1},${color2},${color3})`;
+                break;
+            case 'eraser':
+                break;
+            default:
+                break;
+        }
     }
 }
 
@@ -59,6 +72,8 @@ function modeSelector(string){
         case 'eraser':
             document.querySelector('#eraser').setAttribute('style','color: #F8F9FA; background-color: #343A40;');
             mode = "eraser";
+            break;
+        default:
             break;
     }
     
