@@ -26,6 +26,7 @@ function changeColor(e){
                 e.target.style.backgroundColor = `rgb(${color1},${color2},${color3})`;
                 break;
             case 'eraser':
+                e.target.style.backgroundColor = '#F8F9FA'
                 break;
             default:
                 break;
