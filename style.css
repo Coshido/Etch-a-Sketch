@@ -13,6 +13,7 @@ body{
 div,p,button,input {
     color: #212529;
 }
+
 button{
     padding: 10px;
     border: 1px solid #212529;
@@ -45,13 +46,21 @@ button{
     border-radius: 10px;
 }
 .grid-item{
-    background-color: pink;
+    background-color: #F8F9FA;
     border: 1px solid #212529;
 }
 #clear:active{
     transform: scale(0.98);
     color: #F8F9FA;
     background-color: #343A40;
+}
+#slider{
+min-width: 180px;
+}
+#slider-text{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 0;
 }
 
 /* dev css */
