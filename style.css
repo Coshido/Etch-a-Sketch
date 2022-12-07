@@ -21,11 +21,18 @@ button{
     font-size: 18px;
     min-width: 180px;
 }
+#box{
+    background-color: #DEE2E6;
+    border-radius: 10px;
+    padding: 50px;
+}
+h1{
+    font-size: 48px;
+    margin-top:0;
+    text-align: center;
+}
 #main{
     display: flex;
-    background-color: #DEE2E6;
-    padding: 50px;
-    border-radius: 10px;
     gap: 20px;
 }
 #settings{
