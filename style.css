@@ -10,6 +10,15 @@ body{
     height: 100vh;
     background-color: #F8F9FA;
 }
+#footer{
+    position: absolute;
+    bottom: 0;
+    font-size: 18px;
+}
+#footer-link{
+    text-decoration: none;
+    color: inherit;
+}
 div,p,button,input {
     color: #212529;
 }
