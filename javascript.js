@@ -1,25 +1,20 @@
 const gridContainer = document.querySelector('#sketch');
 let mode = "black";
 let mouseDown = false;
-document.body.onmousedown = function(){
-    mouseDown = true;
-    console.log("mouseDown TRUE");
-}
-document.body.onmouseup = function() {
-    mouseDown = false;
-    console.log("mouseDown FALSE");
+
+document.body.onmouseover = function() {
+    mouseOver = true;
 }
 
 function clearGrid(){
     gridContainer.innerHTML = "";
 }
 function changeColor(e){
-    if(mouseDown){
+    if(mouseOver){
         switch (mode){
             case 'color':
                 let colorPicked = document.querySelector('#color-picker').value;
                 e.target.style.backgroundColor = `${colorPicked}`
-                console.log(colorPicked)
                 break;
             case 'rainbow':
                 let color1 = Math.floor(Math.random() * 256);
@@ -39,7 +34,6 @@ function changeColor(e){
 function appendDiv(){
         const content = document.createElement('div');
         content.classList.add('grid-item');
-        content.addEventListener('mousedown', changeColor);
         content.addEventListener('mouseover', changeColor);
         gridContainer.prepend(content);    
 }
@@ -86,3 +80,4 @@ function modeSelector(string){
 }
 
 createGrid();
+modeSelector("color");
